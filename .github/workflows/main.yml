@@ -12,9 +12,9 @@ jobs:
       id: "json_properties"
       uses: "zoexx/github-action-json-file-properties@release"
       with:
-       file_path: "src/json/application.json"
+       file_path: "package.json"
     - run: |
-        echo ${{steps.json_properties.outputs.TanantName}}
+        echo ${{steps.json_properties.outputs.dependencies}}
                 
 
 
