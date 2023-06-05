@@ -12,11 +12,10 @@ jobs:
       id: "json_properties"
       uses: "zoexx/github-action-json-file-properties@release"
       with:
-       file_path: "./json/application.json"
+       file_path: "src/json/application.json"
     - run: |
-                echo ${{steps.json_properties.outputs.name}}
-                #echo ${{steps.json_properties.outputs.version}}
-                #echo ${{steps.json_properties.outputs.private}}
+                echo ${{steps.json_properties.outputs.TanantName}}
+                
 
 
 
