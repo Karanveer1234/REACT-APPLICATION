@@ -14,7 +14,7 @@ jobs:
       with:
        file_path: "src/json/application.json"
     - run: |
-                echo ${{steps.json_properties.outputs.TanantName}}
+                echo ${{steps.json_properties.outputs.TanantName.test}}
                 
 
 
