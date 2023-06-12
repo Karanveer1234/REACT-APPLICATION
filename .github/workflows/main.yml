@@ -35,11 +35,11 @@ jobs:
             console.log(getTenantInformation(keyObject));
             let tenantObject = getTenantInformation();
             if (tenantObject && tenantObject.length > 0) {
-              console.log('Found tenant name '+ keyObject[tanentName] + ' and env '+ keyObject[enVariable]);
+              console.log('Found tenant name '+ keyObject.tanentName + ' and env '+ keyObject.enVariable);
               const LOCALYTICS_ID = tenantObject[LOCALYTICS_ID];
               core.exportVariable('LOCALYTICS_ID', LOCALYTICS_ID)
             } else {
-              const message = 'The tenant not found for tenant => ' + keyObject[tanentName] + ' and environment => ' + keyObject[enVariable]
+              const message = 'The tenant not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
               core.setFailed(message);
             }            
                 
