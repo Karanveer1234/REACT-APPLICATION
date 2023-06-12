@@ -21,14 +21,6 @@ jobs:
             console.log(`Reading data for tenant =>`+keyObject.tanentName); 
             let  getTenantInformation = ({tanentName,enVariable}) => {
             let tenantConfigData = deploymentConfig[tanentName][enVariable];
-            const LOCALYTICS_ID = tenantConfigData.localyticsId
-            const FIRBASE_PROJECT_ID = tenantConfigData.firebaseProjectId
-            const FIRBASE_SITE_ID = tenantConfigData.firebaseSiteId
-            const FIRBASE_AUTH_KEY = tenantConfigData.firebaseAuthKey
-            core.exportVariable('LOCALYTICS_ID', LOCALYTICS_ID)
-            core.exportVariable('FIRBASE_PROJECT_ID', FIRBASE_PROJECT_ID)
-            core.exportVariable('FIRBASE_SITE_ID', FIRBASE_SITE_ID)
-            core.exportVariable('FIRBASE_AUTH_KEY', FIRBASE_AUTH_KEY)
             return tenantConfigData;
             };
 
@@ -36,7 +28,7 @@ jobs:
             let tenantObject = getTenantInformation(keyObject);
             if (tenantObject !=null) {
               console.log('Found tenant name '+ keyObject['tanentName'] + ' and env '+ keyObject.enVariable);
-              const LOCALYTICS_ID = tenantObject[LOCALYTICS_ID];
+              const LOCALYTICS_ID = tenantObject.localyticsId;
               core.exportVariable('LOCALYTICS_ID', LOCALYTICS_ID)
             } else {
               const message = 'The tenant not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
