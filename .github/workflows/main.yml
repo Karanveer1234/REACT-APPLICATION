@@ -13,7 +13,7 @@ jobs:
       id: read-json
       with:                  
           script: |
-            let keyObject = {tanentName:"activenation1",enVariable:"PROD"};
+            let keyObject = {tanentName:"activenation",enVariable:"PROD"};
             const { TENANT_ID, BE_ENV } = process.env 
             const fs = require('fs');            
             const data = fs.readFileSync('.github/workflows/parameter.json');            
