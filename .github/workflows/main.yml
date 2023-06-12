@@ -13,7 +13,7 @@ jobs:
       id: read-json
       with:                  
           script: |
-            let keyObject = {tanentName:"activenation",enVariable:"PROD"};
+            let keyObject = {tanentName:"activenation1",enVariable:"PROD"};
             const { TENANT_ID, BE_ENV } = process.env 
             const fs = require('fs');            
             const data = fs.readFileSync('.github/workflows/parameter.json');            
@@ -21,22 +21,16 @@ jobs:
             console.log(`Reading data for tenant =>`+keyObject.tanentName); 
             let  getTenantInformation = ({tanentName,enVariable}) => {
             let tenantConfigData = deploymentConfig[tanentName][enVariable];
-            return tenantConfigData;
-            };
-
-            console.log(getTenantInformation(keyObject));
-            let tenantObject = getTenantInformation(keyObject);
-            if (tenantObject !=null) {
+            if (tenantConfigData !=null) {
               console.log('Found tenant name '+ keyObject['tanentName'] + ' and env '+ keyObject.enVariable);
               const LOCALYTICS_ID = tenantObject.localyticsId;
               core.exportVariable('LOCALYTICS_ID', LOCALYTICS_ID)
             } else {
               const message = 'The tenant not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
               core.setFailed(message);
-            }            
-                
-
-
-
-
-        
+            }
+            return tenantConfigData;
+            };
+            console.log(getTenantInformation(keyObject));
+            let tenantObject = getTenantInformation(keyObject);
+                 
