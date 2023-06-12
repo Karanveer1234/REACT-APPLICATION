@@ -21,11 +21,6 @@ jobs:
             console.log(`Reading data for tenant =>`+keyObject.tanentName); 
             let  getCredentail = ({tanentName,enVariable}) => {
             let tenantConfigData = deploymentConfig[tanentName][enVariable];
-            console.log("localyticsId="+tenantConfigData.localyticsId);
-            console.log("StripeKey="+tenantConfigData.StripeKey);
-            console.log("firebaseProjectId="+tenantConfigData.firebaseProjectId);
-            console.log("firebaseSiteId="+tenantConfigData.firebaseSiteId);
-            console.log("firebaseAuthKey="+tenantConfigData.firebaseAuthKey);
             const LOCALYTICS_ID = tenantConfigData.localyticsId
             const FIRBASE_PROJECT_ID = tenantConfigData.firebaseProjectId
             const FIRBASE_SITE_ID = tenantConfigData.firebaseSiteId
@@ -36,7 +31,17 @@ jobs:
             core.exportVariable('FIRBASE_AUTH_KEY', FIRBASE_AUTH_KEY)
             return tenantConfigData;
             };
+
             console.log(getCredentail(keyObject));
+            let tenantObject = getTenantInformation();
+            if (tenantObject && tenantObject.length > 0) {
+              console.log(`Found tenant name `+keyObject[tanentName]+' and env '+ keyObject[enVariable]);
+              const LOCALYTICS_ID = tenantObject[LOCALYTICS_ID];
+              core.exportVariable('LOCALYTICS_ID', LOCALYTICS_ID)
+            } else {
+              const message = 'The tenant not found for tenant => ' +keyObject[tanentName] ' + ' and environment => keyObject[enVariable]'
+              core.setFailed(message);
+            }            
                 
 
 
