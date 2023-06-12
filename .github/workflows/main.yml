@@ -18,9 +18,7 @@ jobs:
             const fs = require('fs');            
             const data = fs.readFileSync('.github/workflows/parameter.json');            
             const deploymentConfig = JSON.parse(data);
-            console.log(`Reading data for tenant =>`+keyObject.tanentName); 
-            let  getTenantInformation = ({tanentName,enVariable}) => {
-            let tenantConfigData = deploymentConfig[tanentName][enVariable];
+            let tenantConfigData = deploymentConfig[keyObject.tanentName][keyObject.enVariable];
             const LOCALYTICS_ID = tenantConfigData.localyticsId
             const FIRBASE_PROJECT_ID = tenantConfigData.firebaseProjectId
             const FIRBASE_SITE_ID = tenantConfigData.firebaseSiteId
@@ -62,9 +60,7 @@ jobs:
               const message = 'The FIRBASE_STRIPE_KEY not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
               core.setFailed(message);
             }
-            return tenantConfigData;
-            };
+           
 
-            let tenantObject = getTenantInformation(keyObject);
-   
+     
       
