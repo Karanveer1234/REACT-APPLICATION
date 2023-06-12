@@ -14,10 +14,10 @@ jobs:
       with:                  
           script: |
             let keyObject = {tanentName:"activenation",enVariable:"PROD"};
-            const { TENANT_ID, BE_ENV } = process.env
+            const { TENANT_ID, BE_ENV } = process.env 
             const fs = require('fs');            
             const data = fs.readFileSync('.github/workflows/parameter.json');            
-            const jsonConfig = JSON.parse(data);
+            const deploymentConfig = JSON.parse(data);
             console.log(`Reading data for tenant =>`+keyObject.tanentName); 
             let  getCredentail = ({tanentName,enVariable}) => {
             let tenantConfigData = deploymentConfig[tanentName][enVariable];
