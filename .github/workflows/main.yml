@@ -8,18 +8,29 @@ jobs:
     steps:
     - name: "Checkout"
       uses: "actions/checkout@v3"
-    - name: "Read data from JSON file .github/assets/localytics-config.json"
+    - name: "Read data from JSON file .github/workflows/parameter.json"
       id: read-json
       env:
           TENANT_ID: ${{ github.event.inputs.tenant_id }}
           BE_ENV: ${{ github.event.inputs.app_env }}
       with:                  
           script: |
+            let keyObject = {tanentName:"activenation",enVariable:"PROD"};
             const { TENANT_ID, BE_ENV } = process.env
             const fs = require('fs');            
             const data = fs.readFileSync('.github/workflows/parameter.json');            
-            const localyticsConfig = JSON.parse(data);
-            console.log(`Reading data for tenant => ${TENANT_ID}`); 
+            const jsonConfig = JSON.parse(data);
+            console.log(`Reading data for tenant =>`+keyObject.tanentName); 
+            let  getCredentail = ({tanentName,enVariable}) => {
+            let newObject = deploymentConfig[tanentName][enVariable];
+            console.log("localyticsId="+newObject.localyticsId);
+            console.log("StripeKey="+newObject.StripeKey);
+            console.log("firebaseProjectId="+newObject.firebaseProjectId);
+            console.log("firebaseSiteId="+newObject.firebaseSiteId);
+            console.log("firebaseAuthKey="+newObject.firebaseAuthKey);
+            return newObject;
+            };
+            console.log(getCredentail(keyObject));
                 
 
 
