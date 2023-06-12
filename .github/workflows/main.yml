@@ -22,13 +22,21 @@ jobs:
             const jsonConfig = JSON.parse(data);
             console.log(`Reading data for tenant =>`+keyObject.tanentName); 
             let  getCredentail = ({tanentName,enVariable}) => {
-            let newObject = deploymentConfig[tanentName][enVariable];
-            console.log("localyticsId="+newObject.localyticsId);
-            console.log("StripeKey="+newObject.StripeKey);
-            console.log("firebaseProjectId="+newObject.firebaseProjectId);
-            console.log("firebaseSiteId="+newObject.firebaseSiteId);
-            console.log("firebaseAuthKey="+newObject.firebaseAuthKey);
-            return newObject;
+            let tenantConfigData = deploymentConfig[tanentName][enVariable];
+            console.log("localyticsId="+tenantConfigData.localyticsId);
+            console.log("StripeKey="+tenantConfigData.StripeKey);
+            console.log("firebaseProjectId="+tenantConfigData.firebaseProjectId);
+            console.log("firebaseSiteId="+tenantConfigData.firebaseSiteId);
+            console.log("firebaseAuthKey="+tenantConfigData.firebaseAuthKey);
+            const LOCALYTICS_ID = tenantConfigData.localyticsId
+            const FIRBASE_PROJECT_ID = firebaseConfig.firebaseProjectId
+            const FIRBASE_SITE_ID = firebaseConfig.firebaseSiteId
+            const FIRBASE_AUTH_KEY = firebaseConfig.firebaseAuthKey
+            core.exportVariable('LOCALYTICS_ID', LOCALYTICS_ID)
+            core.exportVariable('FIRBASE_PROJECT_ID', FIRBASE_PROJECT_ID)
+            core.exportVariable('FIRBASE_SITE_ID', FIRBASE_SITE_ID)
+            core.exportVariable('FIRBASE_AUTH_KEY', FIRBASE_AUTH_KEY)
+            return tenantConfigData;
             };
             console.log(getCredentail(keyObject));
                 
