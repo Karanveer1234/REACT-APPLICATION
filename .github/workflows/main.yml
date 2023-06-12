@@ -35,7 +35,7 @@ jobs:
             console.log(getTenantInformation(keyObject));
             let tenantObject = getTenantInformation(keyObject);
             if (tenantObject !=null) {
-              console.log('Found tenant name '+ keyObject[tanentName] + ' and env '+ keyObject.enVariable);
+              console.log('Found tenant name '+ keyObject['tanentName'] + ' and env '+ keyObject.enVariable);
               const LOCALYTICS_ID = tenantObject[LOCALYTICS_ID];
               core.exportVariable('LOCALYTICS_ID', LOCALYTICS_ID)
             } else {
