@@ -21,9 +21,10 @@ jobs:
             console.log(`Reading data for tenant =>`+keyObject.tanentName); 
             let  getTenantInformation = ({tanentName,enVariable}) => {
             let tenantConfigData = deploymentConfig[tanentName][enVariable];
+            console.log(tenantConfigData);
             if (tenantConfigData !=null) {
               console.log('Found tenant name '+ keyObject['tanentName'] + ' and env '+ keyObject.enVariable);
-              const LOCALYTICS_ID = tenantObject.localyticsId;
+              const LOCALYTICS_ID = tenantConfigData.localyticsId;
               core.exportVariable('LOCALYTICS_ID', LOCALYTICS_ID)
             } else {
               const message = 'The tenant not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
