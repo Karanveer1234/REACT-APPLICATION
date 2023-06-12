@@ -9,6 +9,7 @@ jobs:
     - name: "Checkout"
       uses: "actions/checkout@v3"
     - name: "Read data from JSON file .github/workflows/parameter.json"
+      uses: actions/github-script@v6
       id: read-json
       with:                  
           script: |
