@@ -21,17 +21,66 @@ jobs:
             console.log(`Reading data for tenant =>`+keyObject.tanentName); 
             let  getTenantInformation = ({tanentName,enVariable}) => {
             let tenantConfigData = deploymentConfig[tanentName][enVariable];
-            console.log(tenantConfigData);
-            if (tenantConfigData !=null) {
+            const LOCALYTICS_ID = tenantConfigData.localyticsId
+            const FIRBASE_PROJECT_ID = tenantConfigData.firebaseProjectId
+            const FIRBASE_SITE_ID = tenantConfigData.firebaseSiteId
+            const FIRBASE_AUTH_KEY = tenantConfigData.firebaseAuthKey
+            const FIRBASE_STRIPE_KEY = tenantConfigData.StripeKey
+
+            if (LOCALYTICS_ID && LOCALYTICS_ID.length>0) {
               console.log('Found tenant name '+ keyObject['tanentName'] + ' and env '+ keyObject.enVariable);
-              const LOCALYTICS_ID = tenantConfigData.localyticsId;
               core.exportVariable('LOCALYTICS_ID', LOCALYTICS_ID)
             } else {
-              const message = 'The tenant not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
+              const message = 'The LOCALYTICS_ID not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
+              core.setFailed(message);
+            }
+             if (FIRBASE_PROJECT_ID && FIRBASE_PROJECT_ID.length>0) {
+              console.log('Found tenant name '+ keyObject['tanentName'] + ' and env '+ keyObject.enVariable);
+              core.exportVariable('FIRBASE_PROJECT_ID', FIRBASE_PROJECT_ID)
+            } else {
+              const message = 'The FIRBASE_PROJECT_ID not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
+              core.setFailed(message);
+            }
+             if (FIRBASE_SITE_ID && FIRBASE_SITE_ID.length>0) {
+              console.log('Found tenant name '+ keyObject['tanentName'] + ' and env '+ keyObject.enVariable);
+              core.exportVariable('FIRBASE_SITE_ID', FIRBASE_SITE_ID)
+            } else {
+              const message = 'The FIRBASE_SITE_ID not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
+              core.setFailed(message);
+            }
+             if (FIRBASE_AUTH_KEY && FIRBASE_AUTH_KEY.length>0) {
+              console.log('Found tenant name '+ keyObject['tanentName'] + ' and env '+ keyObject.enVariable);
+              core.exportVariable('FIRBASE_AUTH_KEY', FIRBASE_AUTH_KEY)
+            } else {
+              const message = 'The FIRBASE_AUTH_KEY not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
+              core.setFailed(message);
+            }
+             if (FIRBASE_STRIPE_KEY && FIRBASE_STRIPE_KEY.length>0) {
+              console.log('Found tenant name '+ keyObject['tanentName'] + ' and env '+ keyObject.enVariable);
+              core.exportVariable('FIRBASE_STRIPE_KEY', FIRBASE_STRIPE_KEY)
+            } else {
+              const message = 'The FIRBASE_STRIPE_KEY not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
               core.setFailed(message);
             }
             return tenantConfigData;
             };
-            console.log(getTenantInformation(keyObject));
+
             let tenantObject = getTenantInformation(keyObject);
-                 
+        - name: Set Environment
+        run: |
+          cat << EOF > .env.production
+          REACT_APP_VERSION=${{ github.event.inputs.app_version }}.${{ env.GITHUB_RUN_NUMBER_WITH_OFFSET }}
+          REACT_APP_API_BASE_URL=${{ env[env.BASE_URL_NAME] }}
+          REACT_APP_API_CLIENT_ID=1234123412341234
+          REACT_APP_API_CLIENT_SECRET=573572796441127398913495789868468206481
+          REACT_APP_LOCALYTICS_APP_ID=${{ env.LOCALYTICS_ID}}
+          REACT_APP_LOCALYTICS_TIMEOUT=${{ env.timeout }}
+          REACT_APP_STRIPE_KEY=${{ env.FIRBASE_STRIPE_KEY }}
+          REACT_APP_PLATFORM=${{ github.event.inputs.app_env }}
+          REACT_APP_FIREBASE_PROJECT=${{ env.FIRBASE_PROJECT_ID }}
+          REACT_APP_FIREBASE_SITE_NAME=${{ env.FIRBASE_SITE_ID }}
+          REACT_APP_API_KEY=${{ env.FIRBASE_AUTH_KEY }}
+          EOF
+
+      - name: Print .env.production
+        run: cat .env.production    
