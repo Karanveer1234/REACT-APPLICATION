@@ -32,7 +32,7 @@ jobs:
             return tenantConfigData;
             };
 
-            console.log(getCredentail(keyObject));
+            console.log(getTenantInformation(keyObject));
             let tenantObject = getTenantInformation();
             if (tenantObject && tenantObject.length > 0) {
               console.log('Found tenant name '+ keyObject[tanentName] + ' and env '+ keyObject[enVariable]);
