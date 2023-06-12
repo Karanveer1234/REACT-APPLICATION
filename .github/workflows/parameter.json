@@ -1,1 +1,478 @@
+{
+    "activenation": {
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage",
+                "firebaseSiteId": "activenation-stage",
+                "firebaseAuthKey": "AIzaSyDmXWNu3ZAPh6vbdjgqhL6bFTO5d5tz7E0"
+            },
+            "PROD": {
+                "localyticsId": "44f58a4a7579cf7629d67ae-3cd75978-12db-11eb-e811-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-live",
+                "firebaseSiteId": "activenation-prod",
+                "firebaseAuthKey": "AIzaSyCutyK6nxfNoUUmqO7dFijGGMpu9WdtCv8"
+            }
+    },
+    "activio": {
+            "STAGE": {
+                "StripeKey": "pk_test_51Hr3PNDJTIvDvHBKHoaWtjY3P0YngfnGkJjsCgPpCOEDS3TsM1lqsQInbl1zj63fefwiXha6dYZbHUGim9arqL3E00lby5h2bg",
+                "firebaseProjectId": "wexer-stage",
+                "firebaseSiteId": "activio-stage",
+                "firebaseAuthKey": "AIzaSyDmXWNu3ZAPh6vbdjgqhL6bFTO5d5tz7E0"
+            },
+            "PROD": {
+                "localyticsId": "beeacf6a1a07311a6174726-c6bc2874-39ec-11eb-5d24-007c928ca240",
+                "StripeKey": "pk_live_51Hr3PNDJTIvDvHBKWFiYPdCq36DVV7FSEoI18s8VFomhnxAYKEOU5mRgZWOA1Tpe39pijcyRHOSrYiP07Mq5vfae00aFx91UUb",
+                "firebaseProjectId": "wexer-live",
+                "firebaseSiteId": "activio-prod",
+                "firebaseAuthKey": "AIzaSyCutyK6nxfNoUUmqO7dFijGGMpu9WdtCv8"
+            }
+    },
+    "advancefitness": {
+            "STAGE": {
+                "StripeKey": "pk_test_51LtqDyCS5zNIAYQxxp5y0QxHZV1y0ii3MiDnONrTbwffV40DVhs3u53HvXw62wHUYjLG43J3AHoCwylE27u1JHdQ00gxFwTHe3",
+                "firebaseProjectId": "wexer-stage-apac-1",
+                "firebaseSiteId": "advance-fitness-stage",
+                "firebaseAuthKey": "AIzaSyBeMapoTUejSj7qB_YMV7dxDWFzpBMdldk"
+            },
+            "PROD": {
+                "localyticsId": "d49894e85f737a988a4bc6a-f0e189cc-4e03-11ed-6309-007c928ca240",
+                "StripeKey": "pk_live_51LtqDyCS5zNIAYQxq6WEcY3s7eTrxdUuZYaJDWJzrcQMemrlLltz0gAEowpoeDIKhTVc7ffkyez3WMx6WHX3uEoz00m3lsFG7T",
+                "firebaseProjectId": "wexer-prod-3",
+                "firebaseSiteId": "advance-fitness-prod",
+                "firebaseAuthKey": "AIzaSyAWDgz06IUME2vSaD_cFf4NgOGB64WoURk"
+            }
+    },
+    "arkliving": {
+            "STAGE": {
+                "StripeKey": "sk_test_51L88xSGjEwYammxgWrvZFeB1VSBhpl3qzlm2o02ELSOXwZcOP1uTHX0d57q3vcFeRekGvQYK5K0sxXmz6okwrSGT00xuqH6Ucu",
+                "firebaseProjectId": "wexer-stage-2",
+                "firebaseSiteId": "ark-living-stage",
+                "firebaseAuthKey": "AIzaSyBW-IS3FS-7XyzSYGEN0_cgubHHg2C4yh0"
+            },
+            "PROD": {
+                "localyticsId": "c2b5dae6dae5dd3de69e310-6d25f0ec-ed6d-11ec-ee7e-007c928ca240",
+                "StripeKey": "pk_live_51L88xSGjEwYammxgcY9fvucSoeFm8diGu3XPhN6G6X7SYAcGW6AqpHRrMCgrbE9R8fNcaXER7vDBLOSb8uK3MtbQ00TwK5h7pf",
+                "firebaseProjectId": "wexer-6dc33",
+                "firebaseSiteId": "ark-living-prod",
+                "firebaseAuthKey": "AIzaSyA8yR2MSzU6GtVGxqoPOsqno1rVVv9fAcU"
+            }
+    },
+    "basefit": {
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage",
+                "firebaseSiteId": "puregym-swiss-stage",
+                "firebaseAuthKey": "AIzaSyDmXWNu3ZAPh6vbdjgqhL6bFTO5d5tz7E0"
+            },
+            "PROD": {
+                "localyticsId": "6cd0830af65ae4bdcf8ef37-67e2f4f0-56d4-11e9-c4a4-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-prod-eu-2",
+                "firebaseSiteId": "puregym-swiss-prod-1",
+                "firebaseAuthKey": "AIzaSyDfvLxz9LRA98uEWtgQ9OnwC1BAkbcQYLE"
+            }
+    },
+    "beoffices": {
+            "STAGE": {
+                "StripeKey": "pk_test_51L6aRYA1cSQtWrdJOgQXvXiofZB7t9JyHnnf2xBdnoez9oq75RrQPa0q6Jmi6wezvaw5jxyAXkOlpTrhBqCde3jP00mLUBmtjv",
+                "firebaseProjectId": "wexer-stage",
+                "firebaseSiteId": "beoffices-stage",
+                "firebaseAuthKey": "AIzaSyDmXWNu3ZAPh6vbdjgqhL6bFTO5d5tz7E0"
+            },
+            "PROD": {
+                "localyticsId": "7572f485fd0744d0862fd2b-f44cabf2-eb13-11ec-8b87-007c928ca240",
+                "StripeKey": "pk_live_51L6aRYA1cSQtWrdJoBJOCW1pLn6QFXI4qn1sTM9XPfgu8KghtyF2OSxUwjaiq42GYxrWusHfIrUcqsB3NNcXwUV800PlipTV73",
+                "firebaseProjectId": "wexer-live",
+                "firebaseSiteId": "beoffices-prod",
+                "firebaseAuthKey": "AIzaSyCutyK6nxfNoUUmqO7dFijGGMpu9WdtCv8"
+            }
+    },
+    "bhlive": {
+         "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage",
+                "firebaseSiteId": "bhlive-stage-1",
+                "firebaseAuthKey": "AIzaSyDmXWNu3ZAPh6vbdjgqhL6bFTO5d5tz7E0"
+            },
+            "PROD": {
+                "localyticsId": "5fe7b59669cc51dbfb0bd63-e768048a-9223-11eb-c7d2-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-prod-eu-2",
+                "firebaseSiteId": "bhlive-prod-1",
+                "firebaseAuthKey": "AIzaSyDfvLxz9LRA98uEWtgQ9OnwC1BAkbcQYLE"
+            }
+    },
+    "calcot": {
+         "STAGE": {
+                "StripeKey": "pk_test_4KJw5NZsuqD0L5lgb2BdI7T400ioOjBLBS",
+                "firebaseProjectId": "wexer-stage",
+                "firebaseSiteId": "calcot-stage",
+                "firebaseAuthKey": "AIzaSyDmXWNu3ZAPh6vbdjgqhL6bFTO5d5tz7E0"
+            },
+            "PROD": {
+                "localyticsId": "49176c5ef5a0a7b4dea85dd-fa59feb8-a0be-11ea-6457-007c928ca240",
+                "StripeKey": "pk_live_d9YJAs1Hw7joMx1Gv8lXHnqt002Hi0lf5I",
+                "firebaseProjectId": "wexer-live",
+                "firebaseSiteId": "calcot-prod",
+                "firebaseAuthKey": "AIzaSyCutyK6nxfNoUUmqO7dFijGGMpu9WdtCv8"
+            }
+    }, 
+    "cooper": {
+            "STAGE": {
+                "StripeKey": "pk_test_FhrpNPBjOwgJI58lvebiMVaQ009xwVg8Ka",
+                "firebaseProjectId": "wexer-stage-2",
+                "firebaseSiteId": "cooper-stage-1",
+                "firebaseAuthKey": "AIzaSyBW-IS3FS-7XyzSYGEN0_cgubHHg2C4yh0"
+            },
+            "PROD": {
+                "localyticsId": "5b92c2ec573113304d39821-31f4f71e-6c20-11ea-5e18-007c928ca240",
+                "StripeKey": "pk_live_mDzLhtwzxVIXYrxlzjXgtATr00JN1txysA",
+                "firebaseProjectId": "wexer-6dc33",
+                "firebaseSiteId": "cooper-prod",
+                "firebaseAuthKey": "AIzaSyA8yR2MSzU6GtVGxqoPOsqno1rVVv9fAcU"
+            }
+    },
+    "corehealthandfitness": {
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage-2",
+                "firebaseSiteId": "core-health-and-fitness-stage",
+                "firebaseAuthKey": "AIzaSyBW-IS3FS-7XyzSYGEN0_cgubHHg2C4yh0"
+            },
+            "PROD": {
+                "localyticsId": "6d8ad72f1e3ea0eabfeffd2-f35145ba-fdc3-11ec-36d7-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-6dc33",
+                "firebaseSiteId": "core-health-and-fitness-prod",
+                "firebaseAuthKey": "AIzaSyA8yR2MSzU6GtVGxqoPOsqno1rVVv9fAcU"
+            }
+    },
+    "dacadoo": {
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage",
+                "firebaseSiteId": "dacadoo-stage",
+                "firebaseAuthKey": "AIzaSyDmXWNu3ZAPh6vbdjgqhL6bFTO5d5tz7E0"
+            },
+            "PROD": {
+                "localyticsId": "c18f94139b83fc44af23418-01eea382-3ca6-11ec-8e33-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-live",
+                "firebaseSiteId": "dacadoo-prod-1",
+                "firebaseAuthKey": "AIzaSyCutyK6nxfNoUUmqO7dFijGGMpu9WdtCv8"
+            }
+    },
+    "ewindonesia": {
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage-apac-1",
+                "firebaseSiteId": "ew-indonesia-stage-1",
+                "firebaseAuthKey": "AIzaSyBeMapoTUejSj7qB_YMV7dxDWFzpBMdldk"
+            },
+            "PROD": {
+                "localyticsId": "caecfd22876e9c36c34c1bd-e01f1c52-6aa2-11eb-7a8f-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-prod-3",
+                "firebaseSiteId": "ew-indonesia-prod",
+                "firebaseAuthKey": "AIzaSyAWDgz06IUME2vSaD_cFf4NgOGB64WoURk"
+            }
+    },
+    "ewmalaysia": {
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage-apac-1",
+                "firebaseSiteId": "ew-malaysia-stage",
+                "firebaseAuthKey": "AIzaSyBeMapoTUejSj7qB_YMV7dxDWFzpBMdldk"
+            },
+            "PROD": {
+                "localyticsId": "6a2b2e462b670387d22b8b7-3890bbd0-6aa4-11eb-a14c-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-prod-3",
+                "firebaseSiteId": "ew-malaysia-prod",
+                "firebaseAuthKey": "AIzaSyAWDgz06IUME2vSaD_cFf4NgOGB64WoURk"
+            }
+    },
+    "ewphilippines": {
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage-apac-1",
+                "firebaseSiteId": "ew-philippines-stage",
+                "firebaseAuthKey": "AIzaSyBeMapoTUejSj7qB_YMV7dxDWFzpBMdldk"
+            },
+            "PROD": {
+                "localyticsId": "1f35e3866450e99044e481d-a0bc5ab2-6aa3-11eb-d754-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-prod-3",
+                "firebaseSiteId": "ew-philippines-prod",
+                "firebaseAuthKey": "AIzaSyAWDgz06IUME2vSaD_cFf4NgOGB64WoURk"
+            }
+    },
+    "ewsingapore": {
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage-apac-1",
+                "firebaseSiteId": "ew-singapore-stage",
+                "firebaseAuthKey": "AIzaSyBeMapoTUejSj7qB_YMV7dxDWFzpBMdldk"
+            },
+            "PROD": {
+                "localyticsId": "56fa42b6286f193a44ab038-0227b54c-6aa4-11eb-70f7-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-prod-3",
+                "firebaseSiteId": "ew-singapore-prod",
+                "firebaseAuthKey": "AIzaSyAWDgz06IUME2vSaD_cFf4NgOGB64WoURk"
+            }
+    },
+    "ewthailand": {
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage-apac-1",
+                "firebaseSiteId": "ew-thailand-stage",
+                "firebaseAuthKey": "AIzaSyBeMapoTUejSj7qB_YMV7dxDWFzpBMdldk"
+            },
+            "PROD": {
+                "localyticsId": "a29de989285b67030fde7e4-abd4b0ec-7023-11eb-df30-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-prod-3",
+                "firebaseSiteId": "ew-thailand-prod",
+                "firebaseAuthKey": "AIzaSyAWDgz06IUME2vSaD_cFf4NgOGB64WoURk"
+            }
+    },
+    "ferrumcollege": {
+            "STAGE": {
+                "StripeKey": "pk_test_51LDlxiHH2F1ZC0JD9z2pDqtd1Q6PSxjwRjOGPScduaE4WWLIiw45mbaPL7vgCiRvMFlHiCloDEUjaQ9dsWCK3nrn001ZfB9A9f",
+                "firebaseProjectId": "wexer-stage-2",
+                "firebaseSiteId": "ferrum-college-stage",
+                "firebaseAuthKey": "AIzaSyBW-IS3FS-7XyzSYGEN0_cgubHHg2C4yh0"
+            },
+            "PROD": {
+                "localyticsId": "3c164021cd895d4800df20c-2d255cc8-09a4-11ed-19de-007c928ca240",
+                "StripeKey": "pk_live_51LDlxiHH2F1ZC0JDLakqLHKP8Kz4OXYPTZ0uoGobqwUDlYZVQ37EKkhRo8u1OCw3jZMku46yaQahgGrZg8iwgfiu00tuBHfrWn",
+                "firebaseProjectId": "wexer-6dc33",
+                "firebaseSiteId": "ferrum-college-prod",
+                "firebaseAuthKey": "AIzaSyA8yR2MSzU6GtVGxqoPOsqno1rVVv9fAcU"
+            }
+    },
+    "fitnessworld": {
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage-2",
+                "firebaseSiteId": "fwcanada-stage",
+                "firebaseAuthKey": "AIzaSyALA2ata7kwrMLWRZhhQGEwnFt8u0y9JSo"
+            },
+            "PROD": {
+                "localyticsId": "6c43de5d6b796c9c1350bc1-dac47bfc-6c53-11eb-db48-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-6dc33",
+                "firebaseSiteId": "fwcadana-prod",
+                "firebaseAuthKey": "AIzaSyA8yR2MSzU6GtVGxqoPOsqno1rVVv9fAcU"
+            }
+    },
+    "gll": {
+            "STAGE": {
+                "StripeKey": "pk_test_iiE5QtG3ZbNZI1a65WeiDFZT00rDPZoOgj",
+                "firebaseProjectId": "wexer-stage",
+                "firebaseSiteId": "gll-stage",
+                "firebaseAuthKey": "AIzaSyDmXWNu3ZAPh6vbdjgqhL6bFTO5d5tz7E0"
+            },
+            "PROD": {
+                "localyticsId": "d1b883984852267f53aeb1f-b408843a-6c1d-11ea-006f-007c928ca240",
+                "StripeKey": "pk_live_rzCrlVP4Wf8gIGwr5Zg0ZZgA00s9V4qMBt",
+                "firebaseProjectId": "wexer-live",
+                "firebaseSiteId": "gll-prod-1",
+                "firebaseAuthKey": "AIzaSyCutyK6nxfNoUUmqO7dFijGGMpu9WdtCv8"
+            }
+    },
+    "gymonline": {
+            "STAGE": {
+                "StripeKey": "",
+                "firebaseProjectId": "wexer-stage",
+                "firebaseSiteId": "gym-online-stage",
+                "firebaseAuthKey": "AIzaSyDmXWNu3ZAPh6vbdjgqhL6bFTO5d5tz7E0"
+            },
+            "PROD": {
+                "localyticsId": "8035d7f169d5452bfebae21-fa4d7c08-4b01-11ed-9d8b-007c928ca240",
+                "StripeKey": "pk_live_51LsS24KeJBtYbmqAXMrfAShQUqnnLwUVGIl80uFRk7EezyROsZ7IBAhCWXlqhTajabemuQkUOaFbWiY3q1Y9mS5q00CnYVHO6f",
+                "firebaseProjectId": "wexer-live",
+                "firebaseSiteId": "gym-online-prod",
+                "firebaseAuthKey": "AIzaSyCutyK6nxfNoUUmqO7dFijGGMpu9WdtCv8"
+            }
+    }, 
+    "healthglo": {
+            "STAGE": {
+                "StripeKey": "pk_test_8JSTayDadUk3JhrxboiUSNjR00rz4nw6eo",
+                "firebaseProjectId": "wexer-stage-apac-1",
+                "firebaseSiteId": "healthglo-stage",
+                "firebaseAuthKey": "AIzaSyBeMapoTUejSj7qB_YMV7dxDWFzpBMdldk"
+            },
+            "PROD": {
+                "localyticsId": "75f95ec7a403700dedffba2-ca994736-8f5f-11ea-f236-007c928ca240",
+                "StripeKey": "pk_live_eI5GBX0QocjSJuJnkNEqoZfJ00OVkT9CsF",
+                "firebaseProjectId": "wexer-prod-3",
+                "firebaseSiteId": "healthglo-prod",
+                "firebaseAuthKey": "AIzaSyAWDgz06IUME2vSaD_cFf4NgOGB64WoURk"
+            }
+    },
+    "nqsf": {
+            "STAGE": {
+                "StripeKey": "pk_test_51LV1SgFne6fX5uRF2BW3fpbKhWjEEob4jRJDWo3smecLKa9yTe7plCXVqM5CD5oevvTZThzyjuluuvuyEK09nwaN00tYJghutU",
+                "firebaseProjectId": "wexer-stage-apac-1",
+                "firebaseSiteId": "nqsf-stage",
+                "firebaseAuthKey": "AIzaSyBeMapoTUejSj7qB_YMV7dxDWFzpBMdldk"
+            },
+            "PROD": {
+                "localyticsId": "e3e18982a4e6464f994a538-bb8aeb52-17e6-11ed-d080-007c928ca240",
+                "StripeKey": "pk_live_51LV1SgFne6fX5uRFRZuPzuDalcLe6IJT1BhhukH4F45ihefz2UMjAvfR5cgWKSeXm4BiOzJ7WZQF8dIiPRmOlGCp000JOUGBks",
+                "firebaseProjectId": "wexer-prod-3",
+                "firebaseSiteId": "nqsf-prod",
+                "firebaseAuthKey": "AIzaSyAWDgz06IUME2vSaD_cFf4NgOGB64WoURk"
+            }
+    },
+    "sensopro": {
+            "STAGE": {
+                "StripeKey": "pk_test_ZoL662U9LEZ6TBkFRs1VkTVp00x1m7h8Df",
+                "firebaseProjectId": "wexer-stage",
+                "firebaseSiteId": "sensopro-stage",
+                "firebaseAuthKey": "AIzaSyDmXWNu3ZAPh6vbdjgqhL6bFTO5d5tz7E0"
+            },
+            "PROD": {
+                "localyticsId": "2f17b4a7b7fd77cd41d667e-92189f5c-2f0f-11eb-12db-007c928ca240",
+                "StripeKey": "pk_live_tkq37SAkppKfvtDT7S4JDIEC00H4uE4kXu",
+                "firebaseProjectId": "wexer-live",
+                "firebaseSiteId": "sensopro-prod",
+                "firebaseAuthKey": "AIzaSyCutyK6nxfNoUUmqO7dFijGGMpu9WdtCv8"
+            }
+    },
+    "sheffield": {
+        "localyticsId": "",
+            "STAGE": {
+                "StripeKey": "",
+                "firebaseProjectId": "",
+                "firebaseSiteId": "",
+                "firebaseAuthKey": ""
+            },
+            "PROD": {
+                "StripeKey": "",
+                "firebaseProjectId": "",
+                "firebaseSiteId": "",
+                "firebaseAuthKey": ""
+            }
+    },
+    "simplex": {
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-stage-2",
+                "firebaseSiteId": "simplex-stage",
+                "firebaseAuthKey": "AIzaSyBW-IS3FS-7XyzSYGEN0_cgubHHg2C4yh0"
+            },
+            "PROD": {
+                "localyticsId": "74f13b68e2ef8a2387893ed-6042511e-6c20-11ea-006f-007c928ca240",
+                "StripeKey": "pk_live_4epxl96bodaInrnKahZGUKkI",
+                "firebaseProjectId": "wexer-6dc33",
+                "firebaseSiteId": "simplex-prod",
+                "firebaseAuthKey": "AIzaSyA8yR2MSzU6GtVGxqoPOsqno1rVVv9fAcU"
+            }
+    },
+    "stamfordschools": {
+            "STAGE": {
+                "StripeKey": "pk_test_51LvLWXLBNhiwl1f5vMV07iDtyS7feqqftZL0rw7zOpqkbIwSHaMA54RAigqw6thxSmtrWtk5RygPJNmNEjLP5R6M00boE8NWpo",
+                "firebaseProjectId": "wexer-stage",
+                "firebaseSiteId": "stamford-schools-stage",
+                "firebaseAuthKey": "AIzaSyDmXWNu3ZAPh6vbdjgqhL6bFTO5d5tz7E0"
+            },
+            "PROD": {
+                "localyticsId": "35cd8881ab206bd7661b2b5-d677ba54-5147-11ed-273c-007c928ca240",
+                "StripeKey": "pk_live_51LvLWXLBNhiwl1f5ndOoaoh9iN6MZ0A4LRBjGMsIhwIwKxYtR6eqldrUH1At45rIjXSOX6pAAXbn4zcSIeopOo4L00VnpbwA80",
+                "firebaseProjectId": "wexer-live",
+                "firebaseSiteId": "stamford-schools-prod",
+                "firebaseAuthKey": "AIzaSyCutyK6nxfNoUUmqO7dFijGGMpu9WdtCv8"
+            }
+    },
+    "sunpeaksresort": {
+            "STAGE": {
+                "StripeKey": "pk_test_2zj5h1XjxBqALo9D6hSb7sBa00gMkfEvFp",
+                "firebaseProjectId": "wexer-stage-2",
+                "firebaseSiteId": "sunpeaksresort-stage",
+                "firebaseAuthKey": "AIzaSyBW-IS3FS-7XyzSYGEN0_cgubHHg2C4yh0"
+            },
+            "PROD": {
+                "localyticsId": "7f7286289b0010dd9687980-d0e9dcfa-d76c-11ec-2b76-007c928ca240",
+                "StripeKey": "pk_live_3zl1hWWB5zPpiXnjTWTkNwKu00oFL1pPJL",
+                "firebaseProjectId": "wexer-6dc33",
+                "firebaseSiteId": "sunpeaksresort-prod",
+                "firebaseAuthKey": "AIzaSyA8yR2MSzU6GtVGxqoPOsqno1rVVv9fAcU"
+            }
+    },
+    "tenfitness": {
+            "STAGE": {
+                "StripeKey": "pk_test_VQgFVO89L4y9oIIlPArJqDOq002qS7oZBu",
+                "firebaseProjectId": "wexer-stage-2",
+                "firebaseSiteId": "tenfitness-stage",
+                "firebaseAuthKey": "AIzaSyBW-IS3FS-7XyzSYGEN0_cgubHHg2C4yh0"
+            },
+            "PROD": {
+                "localyticsId": "899193706347733b80a534c-84e57c3e-6c20-11ea-5e18-007c928ca240",
+                "StripeKey": "pk_live_LOKCIfM9rqUHzuiJToToWYEl00CXTsHeUp",
+                "firebaseProjectId": "wexer-6dc33",
+                "firebaseSiteId": "tenfitness-prod",
+                "firebaseAuthKey": "AIzaSyA8yR2MSzU6GtVGxqoPOsqno1rVVv9fAcU"
+            }
+    },
+    "wexerdemo": {
+          "CFL": {
+            "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+            "firebaseProjectId": "wexer-services-test",
+            "firebaseSiteId": "wexer-demo-sub-webplayer-test",
+            "firebaseAuthKey": "AIzaSyCHkkTxvxLyz0SrpMaTCk5YsrKb9PQlhKU"
+          }
+          ,
+            "FF-INT": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-services-test",
+                "firebaseSiteId": "wexer-demo-sub-webplayer-test",
+                "firebaseAuthKey": "AIzaSyCHkkTxvxLyz0SrpMaTCk5YsrKb9PQlhKU"
+            },
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-services-stage",
+                "firebaseSiteId": "wexer-demo-sub-webplayer-stage",
+                "firebaseAuthKey": "AIzaSyCtx024Nu39XIVoVJMsCpoFgsYGeWwGf6Y"
+            },
+            "PROD": {
+                "localyticsId": "a587bb2c39c4850126fabfb-9af6a56c-ce70-11eb-0f7f-007c928ca240",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-services-1",
+                "firebaseSiteId": "wexer-demo-webplayer-prod",
+                "firebaseAuthKey": "AIzaSyBBlB-Jj3BWINKdv8OWd8COHnrYWhn3sbM"
+            }
+    }, 
+    "wexerdemofac": {
+            "CFL": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-services-test",
+                "firebaseSiteId": "wexer-demo-fac-webplayer-test",
+                "firebaseAuthKey": "AIzaSyCHkkTxvxLyz0SrpMaTCk5YsrKb9PQlhKU"
 
+            },
+            "FF-INT": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-services-test",
+                "firebaseSiteId": "wexer-demo-fac-webplayer-test",
+                "firebaseAuthKey": "AIzaSyCHkkTxvxLyz0SrpMaTCk5YsrKb9PQlhKU"
+            },
+            "STAGE": {
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-services-stage",
+                "firebaseSiteId": "wexer-demo-fac-webplayer-stage",
+                "firebaseAuthKey": "AIzaSyCtx024Nu39XIVoVJMsCpoFgsYGeWwGf6Y"
+            },
+            "PROD": {
+                "localyticsId": "wexer-localyticsId",
+                "StripeKey": "pk_test_FmsCNtuI1CFaFiXuCHCRS8U3",
+                "firebaseProjectId": "wexer-services-1",
+                "firebaseSiteId": "wexer-demo-fac-webplayer-prod",
+                "firebaseAuthKey": "AIzaSyBBlB-Jj3BWINKdv8OWd8COHnrYWhn3sbM"
+            }
+    }  
+}
