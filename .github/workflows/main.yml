@@ -10,9 +10,6 @@ jobs:
       uses: "actions/checkout@v3"
     - name: "Read data from JSON file .github/workflows/parameter.json"
       id: read-json
-      env:
-          TENANT_ID: ${{ github.event.inputs.tenant_id }}
-          BE_ENV: ${{ github.event.inputs.app_env }}
       with:                  
           script: |
             let keyObject = {tanentName:"activenation",enVariable:"PROD"};
@@ -29,9 +26,9 @@ jobs:
             console.log("firebaseSiteId="+tenantConfigData.firebaseSiteId);
             console.log("firebaseAuthKey="+tenantConfigData.firebaseAuthKey);
             const LOCALYTICS_ID = tenantConfigData.localyticsId
-            const FIRBASE_PROJECT_ID = firebaseConfig.firebaseProjectId
-            const FIRBASE_SITE_ID = firebaseConfig.firebaseSiteId
-            const FIRBASE_AUTH_KEY = firebaseConfig.firebaseAuthKey
+            const FIRBASE_PROJECT_ID = tenantConfigData.firebaseProjectId
+            const FIRBASE_SITE_ID = tenantConfigData.firebaseSiteId
+            const FIRBASE_AUTH_KEY = tenantConfigData.firebaseAuthKey
             core.exportVariable('LOCALYTICS_ID', LOCALYTICS_ID)
             core.exportVariable('FIRBASE_PROJECT_ID', FIRBASE_PROJECT_ID)
             core.exportVariable('FIRBASE_SITE_ID', FIRBASE_SITE_ID)
