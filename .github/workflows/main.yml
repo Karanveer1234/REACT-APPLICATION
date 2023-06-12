@@ -8,13 +8,18 @@ jobs:
     steps:
     - name: "Checkout"
       uses: "actions/checkout@v3"
-    - name: "get properties"
-      id: "json_properties"
-      uses: "zoexx/github-action-json-file-properties@release"
-      with:
-       file_path: "package.json"
-    - run: |
-        echo ${{steps.json_properties.outputs.name}}
+    - name: "Read data from JSON file .github/assets/localytics-config.json"
+      id: read-json
+      env:
+          TENANT_ID: ${{ github.event.inputs.tenant_id }}
+          BE_ENV: ${{ github.event.inputs.app_env }}
+      with:                  
+          script: |
+            const { TENANT_ID, BE_ENV } = process.env
+            const fs = require('fs');            
+            const data = fs.readFileSync('.github/assets/localytics-config.json');            
+            const localyticsConfig = JSON.parse(data);
+            console.log(`Reading data for tenant => ${TENANT_ID}`); 
                 
 
 
