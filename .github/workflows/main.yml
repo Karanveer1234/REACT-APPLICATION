@@ -19,7 +19,7 @@ jobs:
             const data = fs.readFileSync('.github/workflows/parameter.json');            
             const deploymentConfig = JSON.parse(data);
             console.log(`Reading data for tenant =>`+keyObject.tanentName); 
-            let  getCredentail = ({tanentName,enVariable}) => {
+            let  getTenantInformation = ({tanentName,enVariable}) => {
             let tenantConfigData = deploymentConfig[tanentName][enVariable];
             const LOCALYTICS_ID = tenantConfigData.localyticsId
             const FIRBASE_PROJECT_ID = tenantConfigData.firebaseProjectId
