@@ -1,7 +1,12 @@
 name: "test"
 on:  
- push:
-   branches: [ main ]
+ workflow_dispatch:
+    inputs:
+     who-to-greet:  # id of input
+     description: 'Who to greet'
+     required: true
+     default: 'World'
+     
 jobs:
   test:
     runs-on: "windows-latest"
@@ -62,10 +67,7 @@ jobs:
             }
     - name: show resume.tex file content
       run: |
-           try {
-               node ./src/resume.js
-           } catch (error) {
-             console.info("Pull String from POEditor Failed for language ",languageCode,error)      
-           }
+             node ./src/resume.js
+      
      
       
