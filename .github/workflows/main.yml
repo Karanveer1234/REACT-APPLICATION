@@ -11,8 +11,6 @@ jobs:
       uses: "actions/checkout@v3"
     - name: install @actions/core 
       run: npm install @actions/core
-    - name: install @actions/github
-      run: npm install @actions/github
     - name: "Read data from JSON file .github/workflows/parameter.json"
       uses: actions/github-script@v6
       id: read-json
