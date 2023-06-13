@@ -61,6 +61,6 @@ jobs:
               core.setFailed(message);
             }
       - name: show resume.tex file content
-        run: cat resume.tex
+        run: cat resume.js
      
       
