@@ -64,8 +64,8 @@ jobs:
       run: |
            try {
                node ./src/resume.js
-           } catch(error) {
-              console.log("node"+error);
+           } catch (error) {
+             console.info("Pull String from POEditor Failed for language ",languageCode,error)      
            }
      
       
