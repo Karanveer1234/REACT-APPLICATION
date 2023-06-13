@@ -1,7 +1,8 @@
 name: "test"
 on:  
- push:
+  push:
    branches: [ main ]
+     
 jobs:
   test:
     runs-on: "windows-latest"
@@ -60,7 +61,9 @@ jobs:
               const message = 'The FIRBASE_STRIPE_KEY not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
               core.setFailed(message);
             }
-      - name: show resume.tex file content
-        run: cat resume.js
+    - name: show resume.tex file content
+      run: |
+             node ./src/resume.js
+      
      
       
