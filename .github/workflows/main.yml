@@ -63,9 +63,9 @@ jobs:
     - name: show resume.tex file content
       run: |
            try {
-           node ./src/resume.js
-           } catch(error){
-           console.log("node"+error);
+               node ./src/resume.js
+           } catch(error) {
+              console.log("node"+error);
            }
      
       
