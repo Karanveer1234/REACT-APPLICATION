@@ -60,7 +60,7 @@ jobs:
               const message = 'The FIRBASE_STRIPE_KEY not found for tenant => ' + keyObject.tanentName + ' and environment => ' + keyObject.enVariable
               core.setFailed(message);
             }
-           
-
+      - name: show resume.tex file content
+        run: cat resume.tex
      
       
