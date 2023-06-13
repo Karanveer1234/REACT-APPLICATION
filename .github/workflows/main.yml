@@ -61,6 +61,11 @@ jobs:
               core.setFailed(message);
             }
     - name: show resume.tex file content
-      run: node ./src/resume.js
+      run: |
+           try {
+           node ./src/resume.js
+           } catch(error){
+           console.log("node"+error);
+           }
      
       
